@@ -41,7 +41,12 @@ const EmployeeDetails = () => {
       }
     };
     fetchEmployees();
-  }, [company, index]);
+    if (employee) {
+      document.title = `${employee.name.first} ${employee.name.last} | EmployeeFinder`;
+    } else {
+      document.title = "Loading... | EmployeeFinder";
+    }
+  }, [company, index, employee]);
 
   if (error) {
     return <p>{error}</p>;

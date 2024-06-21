@@ -9,6 +9,7 @@ function Fav() {
     useEffect(() => {
         const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
         setFav(favorites);
+        document.title = 'Favorites | EmployeeFinder';
     }, []);
 
 

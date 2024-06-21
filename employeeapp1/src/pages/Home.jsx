@@ -79,8 +79,8 @@ function Home() {
             </div>
             {
                 searchTerm && (<>
+                        <h1 className='text-2xl'>Showing search results for {searchTerm}</h1>
                     <div>
-                        <h1>Showing search results for {searchTerm}</h1>
                         <ul className='flex flex-wrap gap-5 justify-center'>
                             {filteredEmployees.length > 0 && filteredEmployees.map((employee, i) => (
                                 <EmployeeCard key={employee?.login?.uuid} employee={employee} company={searchTerm} index={i} />
