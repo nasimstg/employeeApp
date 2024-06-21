@@ -21,7 +21,7 @@ export const EmployeeCard = ({ employee, company, index }) => {
   }
 
   return (
-    <div className="sm:w-full md:w-1/2 min-w-[450px] lg:w-1/3 p-2">
+    <div className="sm:w-[90%] md:w-1/2 min-w-[450px] sm:min-w[380px] lg:w-1/3 p-2">
       <div className="rounded overflow-hidden shadow-lg m-4 flex flex-row">
         <img className="w-auto md:h-36 lg:h-48 sm:h-24 object-cover" src={employee?.picture?.large} alt="Employee" />
         <div className="px-6 py-4 flex flex-col">

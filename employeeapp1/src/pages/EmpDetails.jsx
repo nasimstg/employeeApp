@@ -68,7 +68,7 @@ const EmployeeDetails = () => {
           <p className='text-gray-500'>Phone: {employee.phone}</p>
           <p className='text-gray-500'>Location: {employee.location?.city}, {employee.location?.country}</p>
           {/* Leaflet Map */}
-          <div id="map" style={{ height: '400px', width: '400px' }}>
+          <div id="map" className='m-4' style={{ height: '300px', width: '300px' }}>
             <MapContainer
               center={[employee.location.coordinates.latitude, employee.location.coordinates.longitude]}
               zoom={13}

@@ -14,7 +14,6 @@ function Home() {
 
     useEffect(() => {
         const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
-        console.log(favorites);
         setFav(favorites);
         fetchEmployees();
 
